@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result_screen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/result_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="symbol_clicked"
+            android:text="@string/clear"
+            android:tag="@string/clear"
+            android:textColor="@color/colorOrange"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="symbol_clicked"
+            android:text="@string/del"
+            android:tag="@string/del"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="operator_clicked"
+            android:tag="@string/divide"
+            android:text="@string/divide"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="operator_clicked"
+            android:tag="@string/multiply"
+            android:text="@string/multiply"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/seven"
+            android:tag="@string/seven"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/eight"
+            android:tag="@string/eight"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/nine"
+            android:tag="@string/nine"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="operator_clicked"
+            android:tag="@string/minus"
+            android:text="@string/minus"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="30sp"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/four"
+            android:tag="@string/four"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/five"
+            android:tag="@string/five"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/six"
+            android:tag="@string/six"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="operator_clicked"
+            android:tag="@string/add"
+            android:text="@string/add"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/one"
+            android:tag="@string/one"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/two"
+            android:tag="@string/two"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/three"
+            android:tag="@string/three"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="operator_clicked"
+            android:tag="@string/percent"
+            android:text="@string/percent"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/zero"
+            android:tag="@string/zero"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="number_clicked"
+            android:text="@string/dot"
+            android:tag="@string/dot"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_big"
+            android:fontFamily="@font/roboto_light"
+            android:onClick="symbol_clicked"
+            android:text="@string/equals"
+            android:tag="@string/equals"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="1" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>
